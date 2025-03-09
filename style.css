@@ -1,0 +1,100 @@
+/* Apply a smooth gradient background */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #205781, #4F959D);
+    margin: 0;
+    color: #fff;
+}
+
+/* Main game container */
+.game-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Game heading */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Input field */
+input {
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Style input placeholder */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button styles */
+button {
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #98D2C0;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #ff477e;
+    transform: scale(1.05);
+}
+
+/* Message styling */
+#message {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Attempts left text */
+p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .game-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
